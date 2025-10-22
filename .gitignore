@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -31,3 +32,33 @@ build/
 
 ### VS Code ###
 .vscode/
+=======
+cat > .gitignore << 'EOF'
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Gradle
+.gradle/
+build/
+
+# Spring Boot
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+
+git add .gitignore
+git commit -m "Initial commit: Add .gitignore"
+git push origin main
+>>>>>>> a995bebefb83cae3c91e3dfd5d8ed7ec4313f5e5
