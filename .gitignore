@@ -1,0 +1,28 @@
+cat > .gitignore << 'EOF'
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Gradle
+.gradle/
+build/
+
+# Spring Boot
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+
+git add .gitignore
+git commit -m "Initial commit: Add .gitignore"
+git push origin main
